@@ -1,0 +1,37 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "playwright",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npx playwright install",
+    "test": "playwright test --browser=chromium --reporter=html",
+    "test-html-report": "playwright test --browser=chromium --reporter=html",
+    "test-line-report": "playwright test --browser=all --reporter=line",
+    "test-list-report": "playwright test --browser=chromium --reporter=list",
+    "test-json-report": "PLAYWRIGHT_JSON_OUTPUT_NAME=results.json playwright test --browser=chromium --reporter=json",
+    "env:test": "cross-env test_env=test npx playwright test --browser=chromium --reporter=html",
+    "env:integration": "cross-env test_env=integration npx playwright test --browser=chromium --reporter=html",
+    "env:staging": "cross-env test_env=staging npx playwright test --browser=chromium --reporter=html",
+    "env:development": "cross-env test_env=dev npx playwright test --browser=chromium --reporter=html",
+    "env:prod": "cross-env test_env=prod npx playwright test --browser=chromium --reporter=html"
+
+  },
+  "keywords": [
+    "playwright test runner",
+    "playwright typescript framework"
+  ],
+  "author": "Csanad Szabo",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.31.2",
+    "@types/node": "^18.14.5",
+    "cross-env": "^7.0.3",
+    "playwright": "^1.31.2",
+    "toml": "^3.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
