@@ -30,9 +30,9 @@ Environment parameters can be configured in the .env files found in the **/helpe
 2. The URL, Username and Password can be customized depending on the needed environment
 ### Example .env file
 >ENV_TYPE = "Test Environment"  
->BASE_URL = "https://integration.v2.stratus.illumina.com/agendia-adapt-us"  
->USERNAME = "AUS_AUTO_INT_C001@illumina.com"  
->PASSWORD = "WSauto1!"
+>BASE_URL = "https://..."  
+>USERNAME = "Username"  
+>PASSWORD = "Password"
 
 
 3. Parameters to run the tests using the desired environment
