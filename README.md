@@ -115,11 +115,6 @@ One test file can contain multiple tests
 
 
 ## 5. Implementation status
-- [x] Agendia - US Smoke test
-- [ ] Agendia - US Sanity test
-- [x] Multiple Environments
-- [ ] Test Setup and Teardown
-- [X] Adding Additional tests
 
 ## 6. Run parameters
 Running the tests in the "test" environment
